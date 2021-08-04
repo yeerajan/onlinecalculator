@@ -1,0 +1,56 @@
+body{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 100px;
+    display: grid;
+    justify-items: center;
+}
+.container{
+    background-color: #900C3F;
+    padding: 30px;
+    border-radius: 30px;
+}
+.container h2,div{
+    
+}
+.container h2{
+    width: 90%;
+    font-size: 60px;
+    color: green ;
+    margin: 0px;
+    /* border: 1px solid yellowgreen; */
+}
+.container h2 span{
+    color: darksalmon ;
+}
+.container .calculator{
+    display: grid;
+    justify-content: center;
+}
+.container .calculator input{
+    padding-left: 20px;
+    background-color: black;
+    color: white;
+    min-height: 58px;
+    font-size: 30px;
+    width: auto;
+    border-radius: 14px;
+    border: 2px solid green;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    outline: none;
+}
+.container .calculator table tr td button{
+    width: 104px;
+    height: 68px;
+    font-size: 30px;
+    margin: 8px;
+    color: white;
+    border-radius: 14px;
+    border: 2px solid green;
+    background:black;
+}
+.mini{
+    font-size: 57px;
+    text-decoration: underline solid green;
+}
