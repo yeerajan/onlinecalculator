@@ -1,21 +1,21 @@
 body{
     padding-left: 10px;
     padding-right: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     display: grid;
     justify-items: center;
 }
 .container{
     background-color: #900C3F;
-    padding: 30px;
-    border-radius: 30px;
+    padding: 10px;
+    border-radius: 2em;
 }
 .container h2,div{
     
 }
 .container h2{
     width: 90%;
-    font-size: 60px;
+    font-size: 4em;
     color: green ;
     margin: 0px;
     /* border: 1px solid yellowgreen; */
@@ -26,31 +26,49 @@ body{
 .container .calculator{
     display: grid;
     justify-content: center;
+    padding: 20px;
 }
 .container .calculator input{
-    padding-left: 20px;
+    padding-left: 1em;
     background-color: black;
     color: white;
-    min-height: 58px;
-    font-size: 30px;
+    min-height: 2em;
+    font-size: 1.7em;
     width: auto;
-    border-radius: 14px;
+    border-radius: .5em;
     border: 2px solid green;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 20px;
     outline: none;
 }
 .container .calculator table tr td button{
-    width: 104px;
-    height: 68px;
-    font-size: 30px;
-    margin: 8px;
+    width: 3em;
+    height: 2em;
+    font-size: 2em;
+    margin: 10px;
     color: white;
     border-radius: 14px;
     border: 2px solid green;
     background:black;
 }
 .mini{
-    font-size: 57px;
+    font-size: 4em;
     text-decoration: underline solid green;
+}
+
+@media (max-width:800px){
+    .container{
+        width: 80%;
+        padding: 20px;
+    }
+    .mini{
+        font-size: 4em;
+    }
+    
+}
+@media (max-width:500px){
+    .container{
+        width: 80%;
+        padding: 10px;
+    }
+    
 }
