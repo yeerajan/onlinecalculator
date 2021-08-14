@@ -1,11 +1,15 @@
 body{
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 10px;
-    display: grid;
-    justify-items: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30em;
     background-color: #900C3F;
     padding: 10px;
     border-radius: 2em;
@@ -24,9 +28,11 @@ body{
     color: darksalmon ;
 }
 .container .calculator{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    align-items: center;
+    padding: 1em;
 }
 .container .calculator input{
     padding-left: 1em;
@@ -34,41 +40,85 @@ body{
     color: white;
     min-height: 2em;
     font-size: 1.7em;
-    width: auto;
-    border-radius: .5em;
+    width: 15em;
+    border-radius: 0.5em;
     border: 2px solid green;
-    margin: 20px;
+    margin: .8em;
     outline: none;
+}
+.container .calculator table tr td{
+    padding: .4em;
+    margin-right: 0;
 }
 .container .calculator table tr td button{
     width: 3em;
     height: 2em;
     font-size: 2em;
-    margin: 10px;
+    /* margin: .1em; */
     color: white;
-    border-radius: 14px;
+    border-radius: .5em;
     border: 2px solid green;
     background:black;
 }
 .mini{
-    font-size: 4em;
+    font-size: 2.5em;
     text-decoration: underline solid green;
 }
 
-@media (max-width:800px){
+/* @media (max-width:800px){
     .container{
         width: 80%;
         padding: 20px;
     }
     .mini{
         font-size: 4em;
-    }
+    } 
     
-}
+}*/
 @media (max-width:500px){
     .container{
         width: 80%;
         padding: 10px;
     }
-    
+    .container .calculator table tr td{
+        padding: .2em;
+        margin-right: 0;
+    }
+    .container .calculator table tr td button{
+        width: 3em;
+        height: 2em;
+        font-size: 1.1em;
+        margin: .2em;
+        color: white;
+        border-radius: .3em;
+        border: 1px solid green;
+        background:black;
+    }
+    .container .calculator input{
+        padding-left: 0.3em;
+        background-color: black;
+        color: white;
+        min-height: 2em;
+        font-size: 1.3em;
+        width: 12em;
+        border-radius: 0.5em;
+        border: 2px solid green;
+        margin: .2em;
+        outline: none;
+    }
+    .container h2{
+        /* width: 5em; */
+        font-size: 1.8em;
+        color: green ;
+        margin: 0px;
+        /* border: 1px solid yellowgreen; */
+    }
+    .container h2 span{
+        color: darksalmon ;
+        font-size: 1.5em;
+    }
+    .mini{
+        font-size: 2em;
+        text-decoration: underline solid green;
+    }
 }
